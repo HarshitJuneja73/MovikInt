@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movik International</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/movik_logo.png" width="125px" />
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Vision</a></li>
+            </ul>
+          </nav>
+
+          <!-- <img src="images/cart.png" width="30px" height="30px" /> -->
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>Electrify your drive <br />with Movik!</h1>
+            <p>
+              Driving Change, One Charge at a Time:- <br />
+              Pioneering the Electric Vehicle Movement.
+            </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="images/image1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- featured categories -->
+    <!-- <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/category-1.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="images/category-2.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="images/category-3.jpg" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- featured products -->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images_movik/MV-1 60.png" />
+          <h4>60V MV-1 28AH</h4>
+          <p>&#8377; 41900</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-3.png" />
+          <h4>60V MV-3 28AH</h4>
+          <p>&#8377; 47400</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-4.png" />
+          <h4>72V MV-4 32AH</h4>
+          <p>&#8377; 54000</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-6.png" />
+          <h4>72V MV-6 32AH</h4>
+          <p>&#8377; 58000</p>
+        </div>
+      </div>
+      <!-- Latest Procucts -->
+      <div class="title">Latest Products</div>
+      <div class="row">
+        <div class="col-4">
+          <img src="images_movik/MV-1 60.png" />
+          <h4>60V MV-1 32AH</h4>
+          <p>&#8377; 43500</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-2.png" />
+          <h4>60V MV-2 28AH</h4>
+          <p>&#8377; 43400</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-3.png" />
+          <h4>60V MV-3 32AH</h4>
+          <p>&#8377; 49000</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-4.png" />
+          <h4>60V MV-4 28AH</h4>
+          <p>&#8377; 49400</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-3.png" />
+          <h4>72V MV-3 32AH</h4>
+          <p>&#8377; 52000</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-4.png" />
+          <h4>72V MV-4 28AH</h4>
+          <p>&#8377; 52100</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-5.png" />
+          <h4>72V MV-5 32AH</h4>
+          <p>&#8377; 54000</p>
+        </div>
+        <div class="col-4">
+          <img src="images_movik/MV-6.png" />
+          <h4>72V MV-6 28AH</h4>
+          <p>&#8377; 56100</p>
+        </div>
+      </div>
+    </div>
+    <!-- offer -->
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images_movik/MV-2.png" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Exclusively available here</p>
+            <h1>MV-2</h1>
+            <small>
+              Front Disc Brake, Alloy Rim, Led Instrument Cluster, 10" Rim,
+              Wireless Controller and Hydraulic Suspension
+            </small>
+            <a href="" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Visit Us</h3>
+            <p>Maps location</p>
+          </div>
+          <div class="footer-col-2">
+            <img src="images_movik/logo.png" />
+            <p>
+              creating the most suitable and trustable eco-system of electric
+              vehicles
+            </p>
+          </div>
+          <div class="footer-col-4">
+            <h3>Social Media</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS for toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
