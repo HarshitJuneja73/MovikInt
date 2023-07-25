@@ -24,3 +24,19 @@ SmallImg[2].onclick = function () {
 SmallImg[3].onclick = function () {
   ProductImg.src = SmallImg[3].src;
 };
+
+
+document.addEventListener('click', function (event) {
+  if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
+    event.preventDefault();
+    const targetId = event.target.getAttribute('href').slice(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      window.scroll({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
+});
